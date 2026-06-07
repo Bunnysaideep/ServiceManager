@@ -1,0 +1,11 @@
+ID,serviceOrder_ID,itemDescription,effortHours
+a39a2c4e-6f8b-4d3c-5e7a-5b8d1f3c4e16,be4b6d8f-1a3c-4e7d-9f2b-0c3e5a7d8f61,Run emergency diagnostics on MRI cooling subsystem,2.50
+b4ab3d5f-7a9c-4e4d-6f8b-6c9e2a4d5f27,be4b6d8f-1a3c-4e7d-9f2b-0c3e5a7d8f61,Replace failed temperature sensor and recalibrate,1.75
+c5bc4e6a-8b1d-4f5e-7a9c-7d1f3b5e6a38,cf5c7e9a-2b4d-4f8e-1a3c-1d4f6b8e9a72,Inspect HVAC controller alarm history,1.00
+d6cd5f7b-9c2e-4a6f-8b1d-8e2a4c6f7b49,cf5c7e9a-2b4d-4f8e-1a3c-1d4f6b8e9a72,Validate backup airflow mode during load test,2.00
+e7de6a8c-1d3f-4b7a-9c2e-9f3b5d7a8c5a,d06d8f1b-3c5e-4a9f-2b4d-2e5a7c9f1b83,Replace worn spindle belt on CNC machine,3.00
+f8ef7b9d-2e4a-4c8b-1d3f-0a4c6e8b9d61,d06d8f1b-3c5e-4a9f-2b4d-2e5a7c9f1b83,Perform vibration analysis after replacement,1.50
+0a1f8c1e-3a5b-4d9c-2e4a-1b5d7f9c1e72,e17e9a2c-4d6f-4b1a-3c5e-3f6b8d1a2c94,Check chiller refrigerant pressure readings,1.25
+1b2a9d2f-4b6c-4e1d-3f5b-2c6e8a1d2f83,e17e9a2c-4d6f-4b1a-3c5e-3f6b8d1a2c94,Clean condenser coil and confirm temperature recovery,2.25
+2c3b1e3a-5c7d-4f2e-4a6c-3d7f9b2e3a94,f28f1b3d-5e7a-4c2b-4d6f-4a7c9e2b3d05,Inspect pump seal leakage and pressure drop,1.50
+3d4c2f4b-6d8e-4a3f-5b7d-4e8a1c3f4b05,f28f1b3d-5e7a-4c2b-4d6f-4a7c9e2b3d05,Estimate replacement parts and field repair window,0.75

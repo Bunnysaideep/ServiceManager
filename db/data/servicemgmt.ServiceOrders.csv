@@ -1,0 +1,6 @@
+ID,orderNumber,customer_ID,equipment_ID,status,priority,plannedStartDate,plannedEndDate,assignedTechnician_ID
+be4b6d8f-1a3c-4e7d-9f2b-0c3e5a7d8f61,SO-2026-0001,4d7c5a1e-2d4d-4f3c-9b5e-1b7d3b8c0a11,1a3d5f7b-9c2e-4d6a-8b1f-0e2d4c6b8a51,InProcess,Critical,2026-06-03,2026-06-03,7a9d2f4b-6c8e-4a3f-5b7d-6e8a1c3f4b27
+cf5c7e9a-2b4d-4f8e-1a3c-1d4f6b8e9a72,SO-2026-0002,4d7c5a1e-2d4d-4f3c-9b5e-1b7d3b8c0a11,2b4e6a8c-1d3f-4b7a-9c2e-1f3d5b7a9c62,New,High,2026-06-04,2026-06-04,8b1e3a5c-7d9f-4b4a-6c8e-7f9b2d4a5c38
+d06d8f1b-3c5e-4a9f-2b4d-2e5a7c9f1b83,SO-2026-0003,8a2b1d4f-7e6a-4c2d-91a5-3f8d6c7b2e22,3c5f7b9d-2e4a-4c8b-1d3f-2a4c6e8b0d73,Completed,Medium,2026-05-28,2026-05-29,ad3a5c7e-9f2b-4d6c-8e1a-9b2d4f6c7e5a
+e17e9a2c-4d6f-4b1a-3c5e-3f6b8d1a2c94,SO-2026-0004,b1e3c7d9-5f2a-4a8c-8d1e-6a9b2c4d3f33,5e7b9d2f-4a6c-4e1d-3f5b-4c6e8a1d2f95,InProcess,High,2026-06-02,2026-06-02,9c2f4b6d-8e1a-4c5b-7d9f-8a1c3e5b6d49
+f28f1b3d-5e7a-4c2b-4d6f-4a7c9e2b3d05,SO-2026-0005,c9f4a2b7-1d6e-4b3c-a8d5-7e2f1c9b4a44,6f8c1e3a-5b7d-4f2e-4a6c-5d7f9b2e3a16,New,Critical,2026-06-05,2026-06-05,7a9d2f4b-6c8e-4a3f-5b7d-6e8a1c3f4b27

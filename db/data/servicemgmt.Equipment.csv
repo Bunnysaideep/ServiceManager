@@ -1,0 +1,7 @@
+ID,customer_ID,serialNumber,description
+1a3d5f7b-9c2e-4d6a-8b1f-0e2d4c6b8a51,4d7c5a1e-2d4d-4f3c-9b5e-1b7d3b8c0a11,MRI-AP-9001,MRI Scanner Model X200 - Radiology Wing
+2b4e6a8c-1d3f-4b7a-9c2e-1f3d5b7a9c62,4d7c5a1e-2d4d-4f3c-9b5e-1b7d3b8c0a11,HVAC-AP-3310,Critical Care HVAC Controller
+3c5f7b9d-2e4a-4c8b-1d3f-2a4c6e8b0d73,8a2b1d4f-7e6a-4c2d-91a5-3f8d6c7b2e22,CNC-BP-2107,5-Axis CNC Machine - Line 2
+4d6a8c1e-3f5b-4d9c-2e4a-3b5d7f9c1e84,8a2b1d4f-7e6a-4c2d-91a5-3f8d6c7b2e22,PLC-BP-7780,PLC Panel for Assembly Conveyor
+5e7b9d2f-4a6c-4e1d-3f5b-4c6e8a1d2f95,b1e3c7d9-5f2a-4a8c-8d1e-6a9b2c4d3f33,CHILL-GF-1102,Cold Storage Chiller Unit 2
+6f8c1e3a-5b7d-4f2e-4a6c-5d7f9b2e3a16,c9f4a2b7-1d6e-4b3c-a8d5-7e2f1c9b4a44,PUMP-MW-4408,High Pressure Water Pump Station 4
