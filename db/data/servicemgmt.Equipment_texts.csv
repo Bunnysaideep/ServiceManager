@@ -1,0 +1,17 @@
+ID,locale,description
+1a3d5f7b-9c2e-4d6a-8b1f-0e2d4c6b8a51,de,MRT-Scanner Modell X200 - Radiologieabteilung
+1a3d5f7b-9c2e-4d6a-8b1f-0e2d4c6b8a51,fr,Scanner IRM Modèle X200 - Service de Radiologie
+
+2b4e6a8c-1d3f-4b7a-9c2e-1f3d5b7a9c62,de,HLK-Steuerung für Intensivstation
+2b4e6a8c-1d3f-4b7a-9c2e-1f3d5b7a9c62,fr,Contrôleur CVC pour unité de soins intensifs
+
+3c5f7b9d-2e4a-4c8b-1d3f-2a4c6e8b0d73,de,5-Achs-CNC-Maschine - Linie 2
+3c5f7b9d-2e4a-4c8b-1d3f-2a4c6e8b0d73,fr,Machine CNC 5 axes - Ligne 2
+
+4d6a8c1e-3f5b-4d9c-2e4a-3b5d7f9c1e84,de,SPS-Schalttafel für Montageförderband
+4d6a8c1e-3f5b-4d9c-2e4a-3b5d7f9c1e84,fr,Panneau API pour convoyeur d'assemblage
+
+5e7b9d2f-4a6c-4e1d-3f5b-4c6e8a1d2f95,de,Kühllagereinheit 2
+5e7b9d2f-4a6c-4e1d-3f5b-4c6e8a1d2f95,fr,Groupe frigorifique de stockage à froid 2
+
+6f8c1e3a-5b7d-4f2e-4a6c-5d7f9b2e3a16,de,Hochdruck-Wasserpumpenstation 4

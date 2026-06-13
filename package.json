@@ -2,6 +2,7 @@
   "name": "servicemanager",
   "version": "1.0.0",
   "dependencies": {
+    "@cap-js/hana": "^2",
     "@sap/cds": "^9"
   },
   "devDependencies": {
@@ -10,5 +11,12 @@
   "scripts": {
     "start": "cds-serve"
   },
-  "private": true
+  "private": true,
+  "cds": {
+    "requires": {
+      "[hybrid]": {
+        "db": "hana"
+      }
+    }
+  }
 }

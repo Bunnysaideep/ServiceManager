@@ -5,11 +5,15 @@ GET http://localhost:4004/service/ServiceOrders
 GET http://localhost:4004/service/Technicians
 
 ###
-POST http://localhost:4004/service/ServiceOrders(ID='be4b6d8f-1a3c-4e7d-9f2b-0c3e5a7d8f61')/assignTechnician
+GET http://localhost:4004/service/Equipment
+Accept-Language: fr
+
+###
+POST http://localhost:4004/service/ServiceOrders
 Content-Type: application/json
 
 {
-  "technicianId": "8b1e3a5c-7d9f-4b4a-6c8e-7f9b2d4a5c38"
+  "description": "The service order from Hana"
 }
 
 ###

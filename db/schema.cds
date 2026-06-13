@@ -15,7 +15,7 @@ entity Customers: cuid, Address, AuditInfo {
 entity Equipment: cuid, AuditInfo {
     name: String(100);
     serialNumber: String(50);
-    description: String(255);
+    description: localized String(255);
     customer: Association to Customers;
 }
 
