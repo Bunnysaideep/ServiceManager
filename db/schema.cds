@@ -32,8 +32,8 @@ entity ServiceOrders: cuid, AuditInfo {
     equipment: Association to Equipment;
     customer: Association to Customers;
     description: String(255);
-    status: types.ServiceStatus;
-    priority: types.Priority;
+    status: types.ServiceStatus default 'OPEN';
+    priority: types.Priority default 'Medium';
     assignedTechnician: Association to Technicians;
     plannedStartDate: Date;
     plannedEndDate: Date;

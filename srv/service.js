@@ -3,6 +3,11 @@ const cds = require('@sap/cds');
 module.exports = cds.service.impl(async function() {
     const { ServiceOrders, Technicians } = this.entities;
 
+    // Before create: initialize defaults
+    this.before('CREATE', 'ServiceOrders', req => {
+        req.data.orderNumber = req.data.orderNumber || `SO-${new Date().getFullYear()}-${cds.utils.uuid().substring(0, 8).toUpperCase()}`;
+    });
+
     // Action: assignTechnician
     this.on('assignTechnician', async (req) => {
 

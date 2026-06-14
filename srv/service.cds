@@ -1,7 +1,8 @@
 using { servicemgmt } from '../db/schema';
 
 service ServiceManagementSrv @(path: '/service') {
-
+  
+    @odata.draft.enabled
     entity ServiceOrders as projection on servicemgmt.ServiceOrders 
         actions {
             action assignTechnician(technicianId: UUID) returns ServiceOrders; 
