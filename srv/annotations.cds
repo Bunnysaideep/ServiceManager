@@ -55,6 +55,45 @@ annotate service.ServiceOrders with @(
     ]
 );
 
+annotate service.ServiceOrders with {
+    orderNumber  @(Common.ValueList: {
+        CollectionPath: 'ServiceOrders',
+        Parameters    : [{
+            $Type            : 'Common.ValueListParameterInOut',
+            LocalDataProperty: orderNumber,
+            ValueListProperty: 'orderNumber'
+        }]
+    });
+
+    customer @(Common.ValueList: {
+        CollectionPath: 'Customers',
+        Parameters    : [
+            {
+                $Type            : 'Common.ValueListParameterInOut',
+                LocalDataProperty: customer_ID,
+                ValueListProperty: 'ID'
+            },
+            {
+                $Type            : 'Common.ValueListParameterDisplayOnly',
+                ValueListProperty: 'street'
+            },
+            {
+                $Type            : 'Common.ValueListParameterDisplayOnly',
+                ValueListProperty: 'city'
+            },
+            {
+                $Type            : 'Common.ValueListParameterDisplayOnly',
+                ValueListProperty: 'country_code'
+            },
+            {
+                $Type            : 'Common.ValueListParameterDisplayOnly',
+                ValueListProperty: 'postalCode'
+            }
+        ]
+    });
+};
+
+
 
 
 //Object page
