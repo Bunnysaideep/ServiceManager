@@ -1,8 +1,26 @@
 using { servicemgmt } from '../db/schema';
 
+@requires: 'authenticated-user'
 service ServiceManagementSrv @(path: '/service') {
   
     @odata.draft.enabled
+    @restrict: [
+        {
+            grant: ['READ'],
+            to   : 'ServiceViewer'
+        },
+        {
+            grant: [
+                'CREATE',
+                'UPDATE'
+            ],
+            to   : 'ServiceEditor'
+        },
+        {
+            grant: ['DELETE'],
+            to   : 'ServiceAdmin'
+        }
+    ]
     entity ServiceOrders as projection on servicemgmt.ServiceOrders 
         actions {
             action assignTechnician(technicianId: UUID) returns ServiceOrders; 

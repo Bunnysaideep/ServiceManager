@@ -1,0 +1,46 @@
+{
+  "xsappname": "servicemanager",
+  "tenant-mode": "dedicated",
+  "scopes": [
+    {
+      "name": "$XSAPPNAME.ServiceViewer",
+      "description": "ServiceViewer"
+    },
+    {
+      "name": "$XSAPPNAME.ServiceEditor",
+      "description": "ServiceEditor"
+    },
+    {
+      "name": "$XSAPPNAME.ServiceAdmin",
+      "description": "ServiceAdmin"
+    }
+  ],
+  "attributes": [],
+  "role-templates": [
+    {
+      "name": "ServiceViewer",
+      "description": "generated",
+      "scope-references": [
+        "$XSAPPNAME.ServiceViewer"
+      ],
+      "attribute-references": []
+    },
+    {
+      "name": "ServiceEditor",
+      "description": "generated",
+      "scope-references": [
+        "$XSAPPNAME.ServiceEditor",
+        "$XSAPPNAME.ServiceViewer"
+      ],
+      "attribute-references": []
+    },
+    {
+      "name": "ServiceAdmin",
+      "description": "generated",
+      "scope-references": [
+        "$XSAPPNAME.ServiceAdmin"
+      ],
+      "attribute-references": []
+    }
+  ]
+}

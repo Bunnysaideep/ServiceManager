@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "dependencies": {
     "@cap-js/hana": "^2",
-    "@sap/cds": "^9"
+    "@sap/cds": "^9",
+    "@sap/xssec": "^4"
   },
   "devDependencies": {
     "@cap-js/sqlite": "^2.4",
@@ -17,6 +18,11 @@
   "cds": {
     "requires": {
       "[hybrid]": {
+        "db": "hana",
+        "auth": "xsuaa"
+      },
+      "[production]": {
+        "auth": "xsuaa",
         "db": "hana"
       }
     }
