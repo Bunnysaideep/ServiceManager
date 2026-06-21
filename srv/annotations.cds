@@ -88,9 +88,25 @@ annotate service.ServiceOrders with {
             {
                 $Type            : 'Common.ValueListParameterDisplayOnly',
                 ValueListProperty: 'postalCode'
+            },
+            {
+                $Type            : 'Common.ValueListParameterDisplayOnly',
+                ValueListProperty: 'name'
             }
         ]
     });
+
+    priority @(Common.ValueList: {
+        CollectionPath: 'Priorities',
+        Parameters    : [{
+            $Type            : 'Common.ValueListParameterInOut',
+            LocalDataProperty: priority,
+            ValueListProperty: 'priority'
+        }]
+    },
+    Common.ValueListWithFixedValues: true
+    );
+
 };
 
 
@@ -140,6 +156,11 @@ annotate service.ServiceOrders with @(
             },
             {
                 $Type: 'UI.DataField',
+                Label: 'Impact',
+                Value: impact
+            },
+            {
+                $Type: 'UI.DataField',
                 Label: 'Assigned Technician',
                 Value: assignedTechnician.name
             },
@@ -166,3 +187,8 @@ annotate service.ServiceOrders with @(
 annotate service.ServiceOrders with {
     orderNumber @Common.FieldControl : #ReadOnly;
 }
+
+annotate service.ServiceOrders @(Common: {SideEffects  : {
+    SourceProperties: ['priority'],
+    TargetProperties: ['impact']
+}})

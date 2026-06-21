@@ -34,6 +34,7 @@ entity ServiceOrders: cuid, AuditInfo {
     description: String(255);
     status: types.ServiceStatus default 'OPEN';
     priority: types.Priority default 'Medium';
+    impact: String default 'Medium';
     assignedTechnician: Association to Technicians;
     plannedStartDate: Date;
     plannedEndDate: Date;
@@ -47,4 +48,8 @@ entity ServiceOrderItems: cuid, AuditInfo {
     unitPrice: Decimal(10, 2);
     effortHours: Decimal(5, 2);
 }
-
+@cds.persistence.skip
+entity Priorities {
+    key priority: String(20);
+    description: String(255);
+}

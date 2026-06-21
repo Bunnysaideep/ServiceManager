@@ -16,6 +16,9 @@ service ServiceManagementSrv @(path: '/service') {
 
     entity Equipment as projection on servicemgmt.Equipment;
     entity Technicians as projection on servicemgmt.Technicians;
+    entity Priorities as projection on servicemgmt.Priorities;
+
+     function getCurrentExchangeRate(toCurrency: String) returns Decimal;
 
     function getExchangeRate(from: String, to: String) returns Decimal;
 

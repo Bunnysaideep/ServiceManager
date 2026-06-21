@@ -118,4 +118,33 @@ module.exports = cds.service.impl(async function() {
         return rate;
     });
 
+    this.on('READ', 'Priorities', async () => {
+        return [
+            { priority: 'Critical', description: 'Requires immediate attention' },
+            { priority: 'High', description: 'Should be addressed soon' },
+            { priority: 'Medium', description: 'Normal priority' },
+            { priority: 'Low', description: 'Can be addressed at a later time' },
+            { priority: 'Planning', description: 'Under planning' }
+        ];
+    });
+
+    this.before('UPDATE', 'ServiceOrders.drafts', async (req) => {
+        
+        if(req.data.priority){
+            switch (req.data.priority) {
+                case 'Critical':
+                case 'High':
+                    req.data.impact = 'High';
+                    break;
+                case 'Medium':
+                    req.data.impact = 'Medium';
+                    break;
+                case 'Low':
+                case 'Planning':
+                    req.data.impact = 'Low';
+                    break;
+            }
+        }
+    }); 
+
 });
